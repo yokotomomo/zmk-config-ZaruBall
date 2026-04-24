@@ -190,10 +190,13 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
 
+        /* --- ここから追加 --- */
+        swap-xy;      // XとYを入れ替える（90度回転の基本）
+        invert-x;     // 必要に応じて左右を反転
+        // invert-y;  // 必要に応じて上下を反転
+        /* --- ここまで追加 --- */
+
         force-awake;
-        /* keep the sensor awake while ZMK activity state is ACTIVE,
-        fallback to normal downshift mode after ZMK goes into IDLE / SLEEP mode.
-        thus, the sensor would be a `wakeup-source` */
     };
 };
 
