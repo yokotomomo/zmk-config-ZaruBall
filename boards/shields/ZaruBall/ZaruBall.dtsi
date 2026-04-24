@@ -189,7 +189,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-
+        rotation-angle = <15>;
         /* --- ここから追加 --- */
         swap-xy;      // XとYを入れ替える
         invert-y;
